@@ -4,9 +4,9 @@ html{
 }
 
 * ,
-*::after,
-*::before {
-  box-sizing: relative;
+*:after,
+*:before {
+  box-sizing: inherit;
 }
 
 body {
@@ -14,5 +14,5 @@ body {
   padding: 0;
   font-family: var(--font-spaceMono);
   color: #fff;
-  background-color:(--strong_cyan);
+  background-color: var(--light_grayish_cyan);
 }
