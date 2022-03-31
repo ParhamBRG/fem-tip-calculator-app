@@ -16,3 +16,9 @@ body {
   color: #fff;
   background-color: var(--light_grayish_cyan);
 }
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
