@@ -17,17 +17,19 @@
   <main class="container">
     <section class="inputs">
       <h1 class="hidden">inputs</h1>
-      Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
+      <label for="bill">Bill</label>
+      <input class="inputs__bill" type="number" id="bill"/>
+      <fieldset class="tips_grid">
+        <legend>Select Tip %</legend>
+        <button class="inputs__tips">5%</button>
+        <button class="inputs__tips">10%</button>
+        <button class="inputs__tips">15%</button>
+        <button class="inputs__tips">25%</button>
+        <button class="inputs__tips">50%</button>
+        <input class="inputs__custom" type="number" placeholder="custom">
+      </fieldset>
+      <label for="peoplenum">Number of People</label>
+      <input class="inputs__num" type="number" id="peoplenum"/>
     </section>
     <section class="results">
       <h1 class="hidden">results</h1>
