@@ -1,18 +1,87 @@
 @use '../util/' as *;
 
 .inputs{
+  font-family: var(--font-spaceMono);
   background-color: var(--white);
-  padding: rem(30);
+  padding:rem(7.7);
+  @include breakpoints(large){
+    padding: rem(17);
+  };
 
   label{
     display: block;
     color: var(--dark_grayish_cyan);
     font-weight:700;
+    line-height:1;
+    margin-bottom: rem(10);
   }
 
   legend{
     color: var(--dark_grayish_cyan);
     font-weight:700;
     padding: 0;
+    line-height:1;
+    margin-bottom: rem(10);
+    margin-top: rem(38);
+  }
+
+  &__bill , &__num , &__tips , &__custom{
+    width:100%;
+    height: rem(47.5);
+    border: none;
+    border-radius:rem(5);
+    font-size:rem(24);
+    font-family: var(--font-spaceMono);
+  }
+
+  &__bill , &__num , &__custom{
+    background-color: var(--very_light_grayish_cyan);
+  }
+
+  &__tips{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    position: relative;
+
+    .radio_lbl{
+      margin-bottom:0;
+      color: var(--white);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius:inherit;
+      background-color: var(--very_dark_cyan);
+    }
+
+    input[type="radio"]{
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      cursor: pointer;
+
+      &:checked +.radio_lbl{
+          color: var(--very_dark_cyan);
+          background-color: var(--strong_cyan);
+      }
+
+      &:hover +.radio_lbl{
+        color: var(--very_dark_cyan);
+        background-color: var(--hover);
+        border: 1px solid rgb(2, 213, 250);
+      }
+      &:focus +.radio_lbl{
+        color: var(--very_dark_cyan);
+        background-color: var(--hover);
+        border: 1px solid rgb(2, 213, 250);
+      }
+    }
   }
 }

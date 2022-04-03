@@ -1,5 +1,23 @@
+@use '../util/' as *;
+
 .tips_grid{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,1fr);
+  gap: rem(14);
   border: none;
   padding: 0px;
-  margin: 0px;
+  margin: 0 0 rem(38) 0;
+
+  @include breakpoints(large){
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: rem(14);
+  
+    .inputs__tips , .inputs__custom{
+      width: 117px;
+    }
+
+  }
 }
