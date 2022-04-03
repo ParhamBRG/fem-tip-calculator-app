@@ -12,6 +12,7 @@
     display: block;
     color: var(--dark_grayish_cyan);
     font-weight:700;
+    font-size:rem(14);
     line-height:1;
     margin-bottom: rem(10);
   }
@@ -21,7 +22,7 @@
     font-weight:700;
     padding: 0;
     line-height:1;
-    margin-bottom: rem(10);
+    margin-bottom: rem(19);
     margin-top: rem(38);
   }
 
@@ -32,10 +33,28 @@
     border-radius:rem(5);
     font-size:rem(24);
     font-family: var(--font-spaceMono);
+    font-weight:700;
   }
 
   &__bill , &__num , &__custom{
     background-color: var(--very_light_grayish_cyan);
+    direction: rtl;
+    color: var(--very_dark_cyan);
+  }
+
+  &__custom{
+    text-align: center;
+    padding:0;
+  }
+
+  &__bill{
+    background: url(../../../images/icon-dollar.svg) var(--very_light_grayish_cyan) no-repeat 19px center;
+    padding: rem(15) rem(19.5) rem(15) rem(39);
+  }
+
+  &__num{
+    background: url(../../../images/icon-person.svg) var(--very_light_grayish_cyan) no-repeat 19px center;
+    padding: rem(15) rem(19.5) rem(15) rem(39);
   }
 
   &__tips{
@@ -48,6 +67,7 @@
     .radio_lbl{
       margin-bottom:0;
       color: var(--white);
+      font-size: rem(24);
       width: 100%;
       height: 100%;
       display: flex;
@@ -78,10 +98,19 @@
         border: 1px solid rgb(2, 213, 250);
       }
       &:focus +.radio_lbl{
-        color: var(--very_dark_cyan);
-        background-color: var(--hover);
-        border: 1px solid rgb(2, 213, 250);
+        border: 3px solid rgb(2, 213, 250);
       }
     }
   }
 }
+
+//Hide button up and down in input
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+  
+input[type=number] {
+    -moz-appearance: textfield;
+    }
