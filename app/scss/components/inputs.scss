@@ -95,10 +95,9 @@
       &:hover +.radio_lbl{
         color: var(--very_dark_cyan);
         background-color: var(--hover);
-        border: 1px solid rgb(2, 213, 250);
       }
       &:focus +.radio_lbl{
-        border: 3px solid rgb(2, 213, 250);
+        border:rem(3) solid rgb(2, 213, 250);
       }
     }
   }
