@@ -1,6 +1,7 @@
 html{
   font-size:100%;
   box-sizing: border-box;
+  height: 100%;
 }
 
 * ,
@@ -15,6 +16,7 @@ body {
   font-family: var(--font-spaceMono);
   color: #fff;
   background-color: var(--light_grayish_cyan);
+  height: 100%;;
 }
 
 .hidden {
