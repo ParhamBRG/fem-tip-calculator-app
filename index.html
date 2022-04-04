@@ -1,74 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Tip calculator app</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
 
-  <link rel="stylesheet" href="./dist/style.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
-  <script defer src="./dist/script.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery.min.js"></script>
-</head>
-<body>
-  <div class="wrapper">
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./dist/script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
       <div class="logo">
-    <img src="/images/logo.svg" alt="logo">
-  </div>
-  <main class="container">
-    <section class="inputs">
-      <h1 class="hidden">inputs</h1>
-      <label for="bill">Bill</label>
-      <input class="inputs__bill" type="number" id="bill"/>
-      <fieldset class="tips_grid">
-        <legend>Select Tip %</legend>
-        <div class="inputs__tips">
-          <input type="radio" name="tip" class=""/>
-          <label for="tip" class="radio_lbl">5%</label>
-        </div>
-        <div class="inputs__tips">
-          <input type="radio" name="tip" class=""/>
-          <label for="tip" class="radio_lbl">10%</label>
-        </div>
-        <div class="inputs__tips">
-          <input type="radio" name="tip" class=""/>
-          <label for="tip" class="radio_lbl">15%</label>
-        </div>
-        <div class="inputs__tips">
-          <input type="radio" name="tip" class=""/>
-          <label for="tip" class="radio_lbl">25%</label>
-        </div>
-        <div class="inputs__tips">
-          <input type="radio" name="tip" class=""/>
-          <label for="tip" class="radio_lbl">50%</label>
-        </div>
-        <input class="inputs__custom" type="number" placeholder="Custom">
-      </fieldset>
-      <label for="peoplenum">Number of People</label>
-      <input class="inputs__num" type="number" id="peoplenum"/>
-    </section>
-    <section class="results">
-      <h1 class="hidden">results</h1>
-      <div class="results__layout results__layout--tipamount">
-        <div class="results__title">
-          <h2>Tip Amount</h2>
-          <p>/ person</p>
-        </div>
-        <p class="results__bill">$0.00</p>
+        <img src="/images/logo.svg" alt="logo" />
       </div>
-      <div class="results__layout results__layout--total">
-        <div class="results__title">
-          <h2>Total</h2>
-          <p>/ person</p>
-        </div>
-        <p class="results__bill">$0.00</p>
-      </div>
-      <button class="results__resetBtn">Reset</button>
-    </section>
-  </main>
-  </div>
-</body>
+      <main class="container">
+        <section class="inputs">
+          <h1 class="hidden">inputs</h1>
+          <label for="bill">Bill</label>
+          <input class="inputs__bill" type="number" id="bill" />
+          <fieldset class="tips_grid">
+            <legend>Select Tip %</legend>
+            <div class="inputs__tips">
+              <input type="radio" name="tip" class="" />
+              <label for="tip" class="radio_lbl">5%</label>
+            </div>
+            <div class="inputs__tips">
+              <input type="radio" name="tip" class="" />
+              <label for="tip" class="radio_lbl">10%</label>
+            </div>
+            <div class="inputs__tips">
+              <input type="radio" name="tip" class="" />
+              <label for="tip" class="radio_lbl">15%</label>
+            </div>
+            <div class="inputs__tips">
+              <input type="radio" name="tip" class="" />
+              <label for="tip" class="radio_lbl">25%</label>
+            </div>
+            <div class="inputs__tips">
+              <input type="radio" name="tip" class="" />
+              <label for="tip" class="radio_lbl">50%</label>
+            </div>
+            <input class="inputs__custom" type="number" placeholder="Custom" />
+          </fieldset>
+          <label for="peoplenum">Number of People</label>
+          <input class="inputs__num" type="number" id="peoplenum" />
+        </section>
+        <section class="results">
+          <h1 class="hidden">results</h1>
+          <div class="results__layout results__layout--tipamount">
+            <div class="results__title">
+              <h2>Tip Amount</h2>
+              <p>/ person</p>
+            </div>
+            <p class="results__bill">$0.00</p>
+          </div>
+          <div class="results__layout results__layout--total">
+            <div class="results__title">
+              <h2>Total</h2>
+              <p>/ person</p>
+            </div>
+            <p class="results__bill">$0.00</p>
+          </div>
+          <button class="results__resetBtn">Reset</button>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>

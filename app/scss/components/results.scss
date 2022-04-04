@@ -1,81 +1,78 @@
-@use '../util/' as *;
+@use "../util/" as *;
 
-.results{
-  display:flex;
-  flex-direction:column;
-  padding:rem(50) rem(23) rem(23) rem(23);
-  background-color:var(--very_dark_cyan);
-  border-radius:rem(16);
-  width:100%;
-  @include breakpoints(large){
-    padding:rem(60) rem(40) rem(40) rem(40);
-    width:rem(413);
+.results {
+  display: flex;
+  flex-direction: column;
+  padding: rem(50) rem(23) rem(23) rem(23);
+  background-color: var(--very_dark_cyan);
+  border-radius: rem(16);
+  width: 100%;
+  @include breakpoints(large) {
+    padding: rem(60) rem(40) rem(40) rem(40);
+    width: rem(413);
   }
 
-  &__layout{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+  &__layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    &--total{
+    &--total {
       margin-bottom: rem(44.5);
-      @include breakpoints(large){
+      @include breakpoints(large) {
         margin-bottom: rem(138);
       }
     }
-    &--tipamount{
+    &--tipamount {
       margin-bottom: rem(44.5);
-      @include breakpoints(large){
+      @include breakpoints(large) {
         margin-bottom: rem(60);
       }
     }
   }
 
-  &__bill{
+  &__bill {
     color: var(--strong_cyan);
     font-size: rem(32);
-    font-weight:700;
-    line-height:rem(23);
-    @include breakpoints(large){
+    font-weight: 700;
+    line-height: rem(23);
+    @include breakpoints(large) {
       font-size: rem(48);
-      line-height:rem(35);
+      line-height: rem(35);
     }
   }
 
-  &__title{
+  &__title {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 
-    p{
+    p {
       color: var(--dark_grayish_cyan);
       margin: 0;
       font-size: rem(14);
-      font-weight:700;
+      font-weight: 700;
     }
 
-    h2{
+    h2 {
       color: var(--white);
       font-size: rem(16);
-      font-weight:700;
+      font-weight: 700;
     }
-
   }
 
-  &__resetBtn{
-    width:100%;
+  &__resetBtn {
+    width: 100%;
     height: rem(47.5);
     border: none;
-    border-radius:rem(5);
-    font-size:rem(24);
+    border-radius: rem(5);
+    font-size: rem(24);
     font-family: var(--font-spaceMono);
-    font-weight:700;
+    font-weight: 700;
     background-color: var(--strong_cyan);
     color: var(--very_dark_cyan);
 
-    &:hover{
+    &:hover {
       background-color: var(--hover);
     }
-
   }
-
 }

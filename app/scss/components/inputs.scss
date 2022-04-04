@@ -1,71 +1,78 @@
-@use '../util/' as *;
+@use "../util/" as *;
 
-.inputs{
+.inputs {
   font-family: var(--font-spaceMono);
   background-color: var(--white);
-  padding:rem(7.7);
-  @include breakpoints(large){
+  padding: rem(7.7);
+  @include breakpoints(large) {
     padding: rem(17);
-  };
+  }
 
-  label{
+  label {
     display: block;
     color: var(--dark_grayish_cyan);
-    font-weight:700;
-    font-size:rem(14);
-    line-height:1;
+    font-weight: 700;
+    font-size: rem(14);
+    line-height: 1;
     margin-bottom: rem(10);
   }
 
-  legend{
+  legend {
     color: var(--dark_grayish_cyan);
-    font-weight:700;
+    font-weight: 700;
     padding: 0;
-    line-height:1;
+    line-height: 1;
     margin-bottom: rem(19);
     margin-top: rem(38);
   }
 
-  &__bill , &__num , &__tips , &__custom{
-    width:100%;
+  &__bill,
+  &__num,
+  &__tips,
+  &__custom {
+    width: 100%;
     height: rem(47.5);
     border: none;
-    border-radius:rem(5);
-    font-size:rem(24);
+    border-radius: rem(5);
+    font-size: rem(24);
     font-family: var(--font-spaceMono);
-    font-weight:700;
+    font-weight: 700;
   }
 
-  &__bill , &__num , &__custom{
+  &__bill,
+  &__num,
+  &__custom {
     background-color: var(--very_light_grayish_cyan);
     direction: rtl;
     color: var(--very_dark_cyan);
   }
 
-  &__custom{
+  &__custom {
     text-align: center;
-    padding:0;
+    padding: 0;
   }
 
-  &__bill{
-    background: url(../../../images/icon-dollar.svg) var(--very_light_grayish_cyan) no-repeat 19px center;
+  &__bill {
+    background: url(../../../images/icon-dollar.svg)
+      var(--very_light_grayish_cyan) no-repeat 19px center;
     padding: rem(15) rem(19.5) rem(15) rem(39);
   }
 
-  &__num{
-    background: url(../../../images/icon-person.svg) var(--very_light_grayish_cyan) no-repeat 19px center;
+  &__num {
+    background: url(../../../images/icon-person.svg)
+      var(--very_light_grayish_cyan) no-repeat 19px center;
     padding: rem(15) rem(19.5) rem(15) rem(39);
   }
 
-  &__tips{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
+  &__tips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     position: relative;
 
-    .radio_lbl{
-      margin-bottom:0;
+    .radio_lbl {
+      margin-bottom: 0;
       color: var(--white);
       font-size: rem(24);
       width: 100%;
@@ -73,11 +80,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius:inherit;
+      border-radius: inherit;
       background-color: var(--very_dark_cyan);
     }
 
-    input[type="radio"]{
+    input[type="radio"] {
       opacity: 0;
       position: absolute;
       top: 0;
@@ -87,17 +94,17 @@
       margin: 0;
       cursor: pointer;
 
-      &:checked +.radio_lbl{
-          color: var(--very_dark_cyan);
-          background-color: var(--strong_cyan);
+      &:checked + .radio_lbl {
+        color: var(--very_dark_cyan);
+        background-color: var(--strong_cyan);
       }
 
-      &:hover +.radio_lbl{
+      &:hover + .radio_lbl {
         color: var(--very_dark_cyan);
         background-color: var(--hover);
       }
-      &:focus +.radio_lbl{
-        border:rem(3) solid rgb(2, 213, 250);
+      &:focus + .radio_lbl {
+        border: rem(3) solid rgb(2, 213, 250);
       }
     }
   }
@@ -106,10 +113,10 @@
 //Hide button up and down in input
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-    }
-  
-input[type=number] {
-    -moz-appearance: textfield;
-    }
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
