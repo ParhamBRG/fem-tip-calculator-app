@@ -23,13 +23,12 @@ body {
   padding: rem(24) rem(24) rem(24) rem(24);
   border-radius: rem(25);
   //Note
-  //gap: rem(23.8); 
+  //gap: rem(23.8);
   //This is Correct but in old safari and ie not support we use this instead
 
-  & > * + *{
+  & > * + * {
     margin-top: rem(23.8);
   }
-
 
   @include breakpoints(large) {
     width: fit-content;
@@ -39,11 +38,10 @@ body {
     //gap: rem(31); This is Correct but in old safari and ie not support
     padding: rem(32) rem(32) rem(32) rem(32);
 
-    & > * + *{
+    & > * + * {
       margin-top: rem(0);
       margin-left: rem(31);
     }
-
   }
 }
 
