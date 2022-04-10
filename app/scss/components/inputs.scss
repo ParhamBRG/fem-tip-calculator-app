@@ -9,12 +9,23 @@
   }
 
   label {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     color: var(--dark_grayish_cyan);
     font-weight: 700;
     font-size: rem(14);
     line-height: 1;
     margin-bottom: rem(10);
+  }
+
+  .error{
+    display: none;
+    color: var(--error);
+    font-weight: 700;
+    font-size: rem(14);
+    line-height: 1;
+    margin-bottom: 0;
+    text-align: right;
   }
 
   legend {
@@ -59,6 +70,7 @@
   }
 
   &__num {
+    display: block;
     background: url(../../../images/icon-person.svg)
       var(--very_light_grayish_cyan) no-repeat 19px center;
     padding: rem(15) rem(19.5) rem(15) rem(39);

@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
     <script defer src="./dist/script.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -31,32 +31,32 @@
         <section class="inputs">
           <h1 class="hidden">inputs</h1>
           <label for="bill">Bill</label>
-          <input class="inputs__bill" type="number" id="bill" />
+          <input class="inputs__bill" type="number" id="i_bill" />
           <fieldset class="tips_grid">
             <legend>Select Tip %</legend>
             <div class="inputs__tips">
-              <input type="radio" name="tip" class="" />
+              <input type="radio" name="tip" class="" value="5"/>
               <label for="tip" class="radio_lbl">5%</label>
             </div>
             <div class="inputs__tips">
-              <input type="radio" name="tip" class="" />
+              <input type="radio" name="tip" class="" value="10"/>
               <label for="tip" class="radio_lbl">10%</label>
             </div>
             <div class="inputs__tips">
-              <input type="radio" name="tip" class="" />
+              <input type="radio" name="tip" class="" value="15"/>
               <label for="tip" class="radio_lbl">15%</label>
             </div>
             <div class="inputs__tips">
-              <input type="radio" name="tip" class="" />
+              <input type="radio" name="tip" class="" value="25"/>
               <label for="tip" class="radio_lbl">25%</label>
             </div>
             <div class="inputs__tips">
-              <input type="radio" name="tip" class="" />
+              <input type="radio" name="tip" class="" value="50"/>
               <label for="tip" class="radio_lbl">50%</label>
             </div>
-            <input class="inputs__custom" type="number" placeholder="Custom" />
+            <input class="inputs__custom" type="number" placeholder="Custom" id="i_custom" />
           </fieldset>
-          <label for="peoplenum">Number of People</label>
+          <label for="peoplenum">Number of People<span class="error">Can't be zero</span></label>
           <input class="inputs__num" type="number" id="peoplenum" />
         </section>
         <section class="results">
@@ -66,16 +66,16 @@
               <h2>Tip Amount</h2>
               <p>/ person</p>
             </div>
-            <p class="results__bill">$0.00</p>
+            <p class="results__bill" id="r_tip"></p>
           </div>
           <div class="results__layout results__layout--total">
             <div class="results__title">
               <h2>Total</h2>
               <p>/ person</p>
             </div>
-            <p class="results__bill">$0.00</p>
+            <p class="results__bill" id="r_total"></p>
           </div>
-          <button class="results__resetBtn">Reset</button>
+          <button class="results__resetBtn" id="r_reset">Reset</button>
         </section>
       </main>
     </div>
