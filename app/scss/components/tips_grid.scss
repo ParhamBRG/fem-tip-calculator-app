@@ -7,7 +7,7 @@
   gap: rem(14);
   border: none;
   padding: 0px;
-  margin: 0 0 rem(38) 0;
+  margin: rem(38) 0 rem(38) 0;
 
   @include breakpoints(large) {
     display: grid;
