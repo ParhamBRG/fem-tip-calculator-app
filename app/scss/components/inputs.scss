@@ -63,14 +63,14 @@
   }
 
   &__bill {
-    background: url(../../../images/icon-dollar.svg)
+    background: url(../images/icon-dollar.svg)
       var(--very_light_grayish_cyan) no-repeat 19px center;
     padding: rem(15) rem(19.5) rem(15) rem(39);
   }
 
   &__num {
     display: block;
-    background: url(../../../images/icon-person.svg)
+    background: url(../images/icon-person.svg)
       var(--very_light_grayish_cyan) no-repeat 19px center;
     padding: rem(15) rem(19.5) rem(15) rem(39);
   }
