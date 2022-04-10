@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  reset();
+
   $('input[name="tip"]').change(function () {
     let value = get();
     $("#i_custom").val("");
@@ -30,13 +32,13 @@ $(document).ready(function () {
     if ($(this).val() === "") {
       $(this).val("");
       $(".error").css({ display: "none" });
-      $("#peoplenum").css({border: 'none'});
+      $("#peoplenum").css({ border: "none" });
     } else if ($(this).val() == 0) {
-      $("#peoplenum").css({border: 'solid 2px var(--error)'});
+      $("#peoplenum").css({ border: "solid 2px var(--error)" });
       $(".error").css({ display: "inline" });
-    } else if ($(this).val() != 0){
+    } else if ($(this).val() != 0) {
       $(".error").css({ display: "none" });
-      $("#peoplenum").css({border: 'none'});
+      $("#peoplenum").css({ border: "none" });
     }
     let value = get();
     if (isNaN(value[1])) {
@@ -64,9 +66,22 @@ $(document).ready(function () {
     );
   });
 
+  $("#r_reset").click(function () {
+    reset();
+  });
+
   function update(tip, total) {
     $("#r_tip").text("$" + tip);
     $("#r_total").text("$" + total);
+  }
+
+  function reset() {
+    $("#r_tip").text("$" + 0);
+    $("#r_total").text("$" + 0);
+    $("#i_custom").val("");
+    $("#peoplenum").val("");
+    $("#i_bill").val("");
+    $('input[name="tip"]').prop("checked", false);
   }
 
   function get() {
