@@ -30,14 +30,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://drive.google.com/file/d/1kRMI-E7hWZCy4e0fgIklMBQN7yoMVJwU/view?usp=sharing)
+![](https://drive.google.com/file/d/1KNkzOJib01LfH4YNkt0GWJ6Oe_C1_fhd/view?usp=sharing)
+![](https://drive.google.com/file/d/1fHyAmb3XwdqOWm7eZMpoQFfelbNPenjA/view?usp=sharing)
 
 **Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/tip-calculator-rkdoPIZ45)
-- Live Site URL: [Add live site URL here](https://parhambrg.github.io/fem-tip-calculator-app/)
+- Solution URL: [FrontMentor](https://www.frontendmentor.io/solutions/tip-calculator-rkdoPIZ45)
+- Live Site URL: [Github Page](https://parhambrg.github.io/fem-tip-calculator-app/)
 
 ## My process
 
@@ -62,14 +64,14 @@ how to handle accessibility issues in this project
 
 ### Useful resources
 
-- [Example resource 1](https://www.youtube.com/watch?v=VvqyUUROmJw) - This is help me to change flex gap work
+- [How to Change use flex gap](https://www.youtube.com/watch?v=VvqyUUROmJw) - This is help me to change flex gap work
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ParhamBRG)
-- Twitter - [@yourusername](https://twitter.com/PBarzegaran)
-- LinkedIn - [@yourusername](https://www.linkedin.com/in/parham-barzegaran-468778210)
+- Frontend Mentor - [@ParhamBRG](https://www.frontendmentor.io/profile/ParhamBRG)
+- Twitter - [@PBarzegaran](https://twitter.com/PBarzegaran)
+- LinkedIn - [Parham Barzegaran](https://www.linkedin.com/in/parham-barzegaran-468778210)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
