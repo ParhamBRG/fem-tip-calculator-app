@@ -6,7 +6,6 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -27,12 +26,6 @@ Users should be able to:
 - Calculate the correct tip and total cost of the bill per person
 - handle accessibility issues in this project
 - handle Errors and Control inputs
-
-### Screenshot
-
-![](https://drive.google.com/file/d/1kRMI-E7hWZCy4e0fgIklMBQN7yoMVJwU/view?usp=sharing)
-![](https://drive.google.com/file/d/1KNkzOJib01LfH4YNkt0GWJ6Oe_C1_fhd/view?usp=sharing)
-![](https://drive.google.com/file/d/1fHyAmb3XwdqOWm7eZMpoQFfelbNPenjA/view?usp=sharing)
 
 **Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
