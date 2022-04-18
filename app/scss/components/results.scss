@@ -16,6 +16,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: rem(10);
 
     &--total {
       margin-bottom: rem(44.5);

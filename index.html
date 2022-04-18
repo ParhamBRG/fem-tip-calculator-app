@@ -34,7 +34,11 @@
         <section class="inputs">
           <h1 class="hidden">inputs</h1>
           <label for="i_bill">Bill</label>
-          <input class="inputs__bill" type="number" id="i_bill" />
+          <input
+            class="inputs__bill"
+            type="number"
+            id="i_bill"
+          />
           <fieldset class="tips_grid">
             <legend>Select Tip %</legend>
             <div class="inputs__tips">
@@ -62,12 +66,14 @@
               type="number"
               placeholder="Custom"
               id="i_custom"
+              max="100"
+              min="0"
             />
           </fieldset>
           <label for="peoplenum"
             >Number of People<span class="error">Can't be zero</span></label
           >
-          <input class="inputs__num" type="number" id="peoplenum" />
+          <input class="inputs__num" type="number" id="peoplenum" min="1" />
         </section>
         <section class="results">
           <h1 class="hidden">results</h1>
@@ -85,7 +91,7 @@
             </div>
             <p class="results__bill" id="r_total"></p>
           </div>
-          <button class="results__resetBtn" id="r_reset">Reset</button>
+          <button class="results__resetBtn" id="r_reset">RESET</button>
         </section>
       </main>
     </div>
